@@ -203,3 +203,28 @@ transition: all ease 0.5s;
 .box:hover {
   background: rgba(255,255,255,0.1);
 }
+
+.me {
+  max-height: 400px;
+
+}
+
+.me-img {
+  text-align:center;
+}
+
+.section-header {
+  margin-bottom:20px;
+}
+
+.label {
+  /* margin-top:-10px; */
+  font-size:0.7em;
+  color:white;
+}
+
+.label span {
+  background: #007bff;
+  padding:5px 10px;
+  border-radius:10px;
+}
