@@ -1,6 +1,11 @@
 (function ($) {
     $(document).ready(function(){
-        console.log($('.second-fold').visible(true));
+        console.log($('.second-fold > .section-header').visible(true));
+        if ($('.second-fold').visible(true)){
+            $('.icon-scroll').addClass("out");
+        } else {
+            $('.icon-scroll').addClass("in");
+        }
       // hide .navbar first
   
       // fade in .navbar
@@ -10,10 +15,13 @@
               if ($(this).scrollTop() > 20) {
                   $('.navbar').addClass("in");
                   $('.icon-scroll').addClass("out");
-              } else {
+              } 
+              else {
                   $('.navbar').removeClass("in");
-                  $('.icon-scroll').removeClass("out");
-              }
+                  if (!$('.second-fold').visible(true)){
+                      $('.icon-scroll').removeClass("out");
+                    }
+            }
           });
       });
   

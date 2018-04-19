@@ -141,6 +141,14 @@
   opacity:0;
 }
 
+.icon-scroll.in{
+  opacity:1;
+}
+
+.icon-scroll.in.out {
+  opacity:0;
+}
+
 
 .icon-scroll:before {
   content: '';
