@@ -271,4 +271,13 @@ transition: all ease 0.5s;
     border:none;
     border-left: 2px solid #007bff;
     border-left-width: 5px;
+    transition: -webkit-transform .3s ease;
+    transition: transform .3s ease;
+    transition: transform .3s ease,-webkit-transform .3s ease;
+    will-change: transform;
+}
+
+.card-special:hover {
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
 }
