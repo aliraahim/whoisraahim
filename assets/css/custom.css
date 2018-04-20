@@ -1,5 +1,13 @@
 
+body {
+  font-family: Roboto,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+  color: #444;
 
+}
+  
   .container {
     max-width: 960px;
   }
@@ -135,6 +143,7 @@
   box-shadow: inset 0 0 0 1px #6c757d;
   border-radius: 12px;
   opacity:1;
+  margin-bottom:15px;
 }
 
 .icon-scroll.out{
@@ -280,4 +289,32 @@ transition: all ease 0.5s;
 .card-special:hover {
   -webkit-transform: scale(1.03);
   transform: scale(1.03);
+}
+.text-h2{
+  font-size: 2rem;
+    margin-bottom: .5em;
+    margin-top: .3em;
+    font-weight: 400;
+}
+.text-h3{
+  font-size: 1.125rem;
+    margin-bottom: .5em;
+    margin-top: .3em;
+    font-weight: 400;
+}
+
+h4.card-title{
+  font-size: 1rem;
+  margin-bottom: .5em;
+  margin-top: .3em;
+}
+
+section {
+  padding-top:50px;
+  padding-bottom:50px;
+}
+
+#experience {
+  background-color: #F5F7F9;
+  /* background-color:#F6F3EF; */
 }
