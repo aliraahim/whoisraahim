@@ -196,8 +196,9 @@ body {
 }
 
 .icon-scroll {
-  position: relative;
-  left: 50%;
+  position: absolute;
+  /* left: 50%; */
+  margin-top:15px;
 }
 .icon-scroll:before {
   position: absolute;
@@ -222,7 +223,7 @@ transition: all ease 0.5s;
 }
 
 .me {
-  max-height: 400px;
+  max-height: 550px;
 }
 
 .me-img {
@@ -317,4 +318,9 @@ section {
 #experience {
   background-color: #F5F7F9;
   /* background-color:#F6F3EF; */
+}
+
+#intro {
+  padding-top:0px;
+  padding-bottom:0px;
 }
