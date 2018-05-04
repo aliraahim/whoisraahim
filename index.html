@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <style>
+        /* Paste this css to your style sheet file or under head tag */
+/* This only works with JavaScript, 
+if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    background: url(assets/images/Preloader_2.gif) center no-repeat #fff;
+    background-size:65px;
+}
+</style>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/froala-design-blocks/1.0.2/css/froala_blocks.min.css"> -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -9,6 +26,7 @@
   <link rel="stylesheet" href="assets/css/custom.css">
 </head>
 <body>
+    <div class="se-pre-con"></div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top fade">
         <div class="container">
           <a class="navbar-brand" href="#">
@@ -57,7 +75,7 @@
       <div class="container second-fold">
           <div class="row section-header">
               <div class="col-sm-12 text-center">
-                    <p class ="text-secondary">How I've Been Earning a Living</p>
+                    <p class ="text-secondary">My Day Jobs</p>
               </div>
             </div>
           <div class="row align-items-center">
@@ -67,7 +85,7 @@
               <div class="offset-sm-0 col-sm-7">
                   <p class="text-h3">Product Manager @ GlowfishLabs<span><a href="http://glowfishlabs.com" target = "_blank"><img alt="image" class="link_icon" src="assets/images/open_link.svg"></a></span></p>
                   <p class = "label"><span> Currently working here</span></p>
-              <p class="text-secondary">Working with C-level executives, developers and UI designers to drive the success of multiple tech products under the company's umbrella.</p>
+              <p class="text-secondary">I work closely with C-level executives and the engineering team to own and lead the end-to-end sprint/development process to build against the product roadmap. I contribute across multipe tech products and companies that fall under the company's umbrella.</p>
               </div>
           </div>
           <div class ="m-3 m-sm-5"></div>
@@ -78,7 +96,7 @@
             <div class="offset-sm-0 col-sm-7">
                 <p class="text-h3">Product Success Manager @ Referrizer<span><a href="http://business.referrizer.com" target = "_blank" ><img alt="image" class="link_icon" src="assets/images/open_link.svg"></a></span></p>
             <p class="text-secondary">
-              I sat at the heart of the company's efforts to gain traction in the market through its B2B SaaS product offering. This involved reaching & converting the maximum number of potential customers in the least amount of time (growth hacking) & making sure our product's feature set and user experience surpassed that of competitors. </p>
+              I sat at the heart of the company's efforts to gain traction in the market through its B2B SaaS product. This involved reaching & converting the maximum number of potential customers in the least amount of time (growth hacking) & making sure our product's feature set and user experience made for a compelling offering.</p>
             </div>
         </div>
       </div>
@@ -125,13 +143,20 @@
     </div>
 </section> 
   
-
-
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  $(window).on("load", function (e)  {
+      // Animate loader off screen
+      $(".se-pre-con").fadeOut("slow");;
+  });
+</script>
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 <script src="assets/js/custom.js"></script>
+
+
     
 </body>
 </html>
