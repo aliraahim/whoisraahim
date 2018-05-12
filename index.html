@@ -18,7 +18,20 @@ if it's not present, don't show loader */
     background-size:65px;
 }
 </style>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="theme-color" content="#ffffff">
+<title>Who is Raahim?</title>
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/froala-design-blocks/1.0.2/css/froala_blocks.min.css"> -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i">
@@ -27,7 +40,7 @@ if it's not present, don't show loader */
 </head>
 <body>
     <div class="se-pre-con"></div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top fade">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top fade">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="http://placehold.it/300x60?text=Logo" width="150" height="30" alt="">
@@ -52,7 +65,7 @@ if it's not present, don't show loader */
             </ul>
           </div>
         </div>
-      </nav>
+      </nav> -->
 <section id="intro" data-block-type="contents" data-id="1">
     <div class="container">
         <div class="row align-items-center">
@@ -62,7 +75,7 @@ if it's not present, don't show loader */
             <div class="col-sm-offset-0 col-sm-12 col-md-6 mb-5 mb-md-0">
                 <p class="text-h2">I'm <span class ="font-weight-bold">Mohammad Ali Raahim,</span></br>a <span class ="text-primary">Product Manager</span> & technology enthusiast</p>
                 <p class="text-secondary">
-                    I am passionate about creating intuitive, minimum-fuss software products that delight users. I am based out of Lahore, Pakistan.
+                    I am passionate about creating intuitive, easy-to-use software products that delight users and deliver exceptional business results. I am based out of Lahore, Pakistan.
                     <span class ="font-weight-bold">Say hello</span> through <a class = "link" target = "_blank" href="https://www.linkedin.com/in/raahim/">LinkedIn</a> or <a class ="link" target = "_blank"  href="mailto:ali.raahim@gmail.com">email</a>, or keep scrolling.</p>
                     <p><span class="icon-scroll"></span></p>
             </div>
@@ -75,7 +88,7 @@ if it's not present, don't show loader */
       <div class="container second-fold">
           <div class="row section-header">
               <div class="col-sm-12 text-center">
-                    <p class ="text-secondary">My Day Jobs</p>
+                    <p class ="text-secondary">Experience</p>
               </div>
             </div>
           <div class="row align-items-center">
@@ -96,7 +109,7 @@ if it's not present, don't show loader */
             <div class="offset-sm-0 col-sm-7">
                 <p class="text-h3">Product Success Manager @ Referrizer<span><a href="http://business.referrizer.com" target = "_blank" ><img alt="image" class="link_icon" src="assets/images/open_link.svg"></a></span></p>
             <p class="text-secondary">
-              Lead the company's efforts to gain traction in the market through its B2B SaaS product. This involved reaching & converting the maximum number of potential customers in the least amount of time (growth hacking) & making sure our product's feature set and user experience made for a compelling offering in the super competitive US market.</p>
+              Lead the company's efforts to gain traction in the market with its B2B SaaS product. This involved reaching & converting the maximum number of potential customers in the least amount of time (growth hacking) & making sure our product's feature set and user experience made for a compelling offering in the highly competitive US market.</p>
             </div>
         </div>
       </div>
@@ -112,7 +125,7 @@ if it's not present, don't show loader */
         <div class ="row">
           <div class = "col-sm-12">
             <p class ="text-secondary">I like coding. And I love solving problems. I also happen to know a thing or two about electronics.
-          The following projects came into existence because of problems that I wanted to solve. You can read more about those problems and my process of solving them in the accompanying blog posts.</p>
+          The following projects came into existence because of problems that I wanted to solve. You can <strong>soon </strong>read more about those problems and my process of solving them in the accompanying blog posts.</p>
           </div>
         </div>
         <div class ="m-3"></div>
@@ -123,7 +136,7 @@ if it's not present, don't show loader */
                     <h4 class="card-title font-weight-bold">Local lead generation web app<span><img alt="image" class="link_icon" src="assets/images/target.png"></span></h4>
                     <p class="card-text">A tool to generate leads for a hyper-local outbound sales strategy.</p>
                     <a href="https://leadspro.herokuapp.com" target ="_blank" class="card-link link">Go to Project</a>
-                    <a href="#" class="card-link link">Read about it</a>
+                    <span href="" class="card-link link coming-soon" data-toggle="tooltip" title="Coming soon!">Read about it</span>
                   </div>
                 </div>
               </div>
@@ -133,21 +146,26 @@ if it's not present, don't show loader */
                   <div class="card-body">
                     <h4 class="card-title font-weight-bold">Wifi-enabled electric switch<span><img alt="image" class="link_icon" src="assets/images/wifi.png"></span><span><img alt="image" class="link_icon" src="assets/images/bulb.png"></span></h4>
                     <p class="card-text">Raspberry Pi based electric switch that can be controlled over the internet.</p>
-                    <a href="www.simplehomecontrol.com" target = "_blank" class="card-link link">Go to Project</a>
-                    <a href="#" class="card-link link">Read about it</a>
+                    <a href="http://simplehomecontrol.com" target = "_blank" class="card-link link">Go to Project</a>
+                    <span href="" class="card-link link coming-soon" data-toggle="tooltip" title="Coming soon!">Read about it</span>
                   </div>
                 </div>
               </div>
           </div>
               
     </div>
+</section>
+<section id = "coming-soon-section">
+  <div id="construction"></div>
+  <p class = "text-secondary">Blog posts and some other stuff will be available soon!</p>
 </section> 
   
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
   $(window).on("load", function (e)  {
       // Animate loader off screen
-      $(".se-pre-con").fadeOut("slow");;
+      $(".se-pre-con").fadeOut("slow");
+      $('.coming-soon').tooltip();
   });
 </script>
 
